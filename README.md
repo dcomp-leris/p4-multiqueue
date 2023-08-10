@@ -51,7 +51,8 @@ Note: Your machine should have installed [bmv2](https://github.com/p4lang/behavi
 First off all, you need to follow [these steps](https://github.com/nsg-ethz/p4-learning/tree/master/examples/multiqueueing). This will allow your bmv2 and the compiler to be able to support multiqueueing inside bmv2
 
 ### Step 2
-You should now go to PATH_TO_BMV2/mininet and edit p4_mininet.py file. You can get a VM ready with all of that [these steps](https://github.com/mininet/mininet/releases/) 
+You should now go to PATH_TO_BMV2/mininet and edit p4_mininet.py file. You can get a VM ready with all of that [these steps](https://github.com/mininet/mininet/releases/).
+
 Look for this part of the code:
 ```
 def start(self, controllers):
