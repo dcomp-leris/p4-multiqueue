@@ -19,7 +19,7 @@ cd /home/p4/labs/int/
 sudo ./run_int.sh
 ```
 
-This will get mininet to raise the topology specified above, with 2 hosts and 2 switches and with a simple INT based on <a href=“https://github.com/dcomp-leris/InbandNetworkTelemetry-P4“>this link</a>.
+This will get mininet to raise the topology specified above, with 2 hosts and 2 switches and with a simple INT based on [this link](https://github.com/dcomp-leris/InbandNetworkTelemetry-P4). 
 
 With the mininet working, you can start to send packets using the send.py file on host 1 and to receive packets using the receive.py file on host 2. That can be done like this:
 
@@ -45,13 +45,13 @@ HINT: If you're having problems with packet forwarding you can see both switches
 
 ## Option 2
 By choosing this option you can follow this step by step to get your own machine to work with priority-queues inside bmv2.
-Note: Your machine should have installed <a href=“https://github.com/p4lang/behavioral-model“>bmv2</a>, <a href=“https://github.com/mininet/mininet“>mininet</a> and <a href=“https://github.com/p4lang/p4c“>p4c</a>.
+Note: Your machine should have installed [bmv2](https://github.com/p4lang/behavioral-model), [mininet](https://github.com/mininet/mininet) and [p4c](https://github.com/p4lang/p4c).
 
 ### Step 1
-First off all, you need to follow <a href=“https://github.com/nsg-ethz/p4-learning/tree/master/examples/multiqueueing“>these steps</a>. This will allow your bmv2 and the compiler to be able to support multiqueueing inside bmv2
+First off all, you need to follow [these steps](https://github.com/nsg-ethz/p4-learning/tree/master/examples/multiqueueing). This will allow your bmv2 and the compiler to be able to support multiqueueing inside bmv2
 
 ### Step 2
-You should now go to PATH_TO_BMV2/mininet and edit p4_mininet.py file. You can get a VM ready with all of that <a href=“https://github.com/mininet/mininet/releases/“>here</a>
+You should now go to PATH_TO_BMV2/mininet and edit p4_mininet.py file. You can get a VM ready with all of that [these steps](https://github.com/mininet/mininet/releases/) 
 Look for this part of the code:
 ```
 def start(self, controllers):
