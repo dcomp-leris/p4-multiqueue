@@ -8,7 +8,7 @@ The easiest way is to download our Virtual Machine, avaiable in **Option 1**, bu
 You can download our Virtual Machine in this link. The base VM used is from mininet releases in <a href=“https://github.com/mininet/mininet/releases/“>this link</a>.
 
 ### Topology
-<img src="https://raw.githubusercontent.com/dcomp-leris/p4-multiqueue/main/Topology.png?token=GHSAT0AAAAAACF3X2GHISF3PGBXFMULRWNGZGUQ73Q" alt="P4 Topology, including two switches and two hosts">
+<img src="https://github.com/dcomp-leris/p4-multiqueue/blob/main/Topology.png" alt="P4 Topology, including two switches and two hosts">
 ### How to run
 
 ```
