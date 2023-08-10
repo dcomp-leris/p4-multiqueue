@@ -5,7 +5,7 @@ In this github we teach you how to get your own mininet running p4 code with mul
 The easiest way is to download our Virtual Machine, avaiable in **Option 1**, but you can follow our step by step tutorial to have your own machine running mininet with multiqueue in **Option 2**
 
 ## Option 1
-You can download our Virtual Machine in [this link](https://drive.google.com/file/d/1k-QrubUFgCbdEahJZdQ0aoEi4tixcrm9/view?usp=sharing) this link. The base VM used is from mininet releases in [this link](https://github.com/mininet/mininet/releases/).
+You can download our Virtual Machine in this link. The base VM used is from mininet releases in [this link](https://github.com/mininet/mininet/releases/).
 
 ### Topology
 <img src="https://github.com/dcomp-leris/p4-multiqueue/blob/main/Topology.png" alt="P4 Topology, including two switches and two hosts">
