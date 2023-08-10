@@ -7,10 +7,10 @@ The easiest way is to download our Virtual Machine, avaiable in **Option 1**, bu
 ## Option 1
 You can download our Virtual Machine in this link. The base VM used is from mininet releases in <a href=“https://github.com/mininet/mininet/releases/“>this link</a>.
 
-## Topology
+### Topology
 <img src="https://github.com/dcomp-leris/p4-multiqueue/blob/main/Topology.png" alt="P4 Topology, including two switches and two hosts">
 
-## How to run
+### How to run
 
 ```
 cd /home/p4/labs/int/
