@@ -55,9 +55,9 @@ By choosing this option you can follow this step by step to get your own machine
 Note: Your machine should have installed [bmv2](https://github.com/p4lang/behavioral-model), [mininet](https://github.com/mininet/mininet) and [p4c](https://github.com/p4lang/p4c).
 
 
-We recommend you to download the same VM as we did. You can get this VM ready with bmv2, p4c and mininet [here](https://github.com/jafingerhut/p4-guide/blob/master/bin/README-install-troubleshooting.md). You can download the same version as ours directely from [this link](https://drive.google.com/file/d/1_1CCNnJeQRpAfhTpw-m2LZ2T97QWgKp8/view?pli=1).
+We recommend you to download the same VM as we did. You can get this VM ready with bmv2, p4c and mininet [here](https://github.com/jafingerhut/p4-guide/blob/master/bin/README-install-troubleshooting.md). You can download the same version as ours directely from [this link](https://drive.google.com/file/d/1_1CCNnJeQRpAfhTpw-m2LZ2T97QWgKp8/view?pli=1). If you chose this VM, just proceed to Step 1 below.
 
-To download and install bmv2, p4c and mininet you should run these commands:
+To download and install bmv2, p4c and mininet inside your machine you should run these commands:
 ``` 
 git clone https://github.com/p4lang/behavioral-model
 
