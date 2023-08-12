@@ -48,7 +48,7 @@ By choosing this option you can follow this step by step to get your own machine
 
 Note: Your machine should have installed [bmv2](https://github.com/p4lang/behavioral-model), [mininet](https://github.com/mininet/mininet) and [p4c](https://github.com/p4lang/p4c).
 
-You can get a VM ready with all of that [here](https://github.com/mininet/mininet/releases/).
+We recommend you to download the same VM as we did. You can get this VM ready with bmv2, p4c and mininet [here](https://github.com/jafingerhut/p4-guide/blob/master/bin/README-install-troubleshooting.md). You can download the same version directely from [this link](https://drive.google.com/file/d/1_1CCNnJeQRpAfhTpw-m2LZ2T97QWgKp8/view?pli=1)
 
 ### Step 1
 First off all, you need to follow [these steps](https://github.com/nsg-ethz/p4-learning/tree/master/examples/multiqueueing). This will allow your bmv2 and the compiler to be able to support multiqueueing inside bmv2
