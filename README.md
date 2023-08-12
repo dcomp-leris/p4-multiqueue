@@ -45,7 +45,9 @@ HINT: If you're having problems with packet forwarding you can see both switches
 
 ## Option 2
 By choosing this option you can follow this step by step to get your own machine to work with priority-queues inside bmv2.
+
 Note: Your machine should have installed [bmv2](https://github.com/p4lang/behavioral-model), [mininet](https://github.com/mininet/mininet) and [p4c](https://github.com/p4lang/p4c).
+
 You can get a VM ready with all of that [here](https://github.com/mininet/mininet/releases/).
 
 ### Step 1
