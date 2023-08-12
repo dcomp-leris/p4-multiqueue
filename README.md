@@ -7,6 +7,12 @@ The easiest way is to download our Virtual Machine, avaiable in **Option 1**, bu
 ## Option 1
 You can download our Virtual Machine in this link. The base VM used is from mininet releases in [this link](https://github.com/mininet/mininet/releases/).
 
+Login: p4
+password: p4
+
+Login: vagrant
+password: vagrant
+
 ### Topology
 <img src="https://github.com/dcomp-leris/p4-multiqueue/blob/main/Topology.png" alt="P4 Topology, including two switches and two hosts">
 
@@ -48,7 +54,63 @@ By choosing this option you can follow this step by step to get your own machine
 
 Note: Your machine should have installed [bmv2](https://github.com/p4lang/behavioral-model), [mininet](https://github.com/mininet/mininet) and [p4c](https://github.com/p4lang/p4c).
 
-We recommend you to download the same VM as we did. You can get this VM ready with bmv2, p4c and mininet [here](https://github.com/jafingerhut/p4-guide/blob/master/bin/README-install-troubleshooting.md). You can download the same version directely from [this link](https://drive.google.com/file/d/1_1CCNnJeQRpAfhTpw-m2LZ2T97QWgKp8/view?pli=1)
+
+We recommend you to download the same VM as we did. You can get this VM ready with bmv2, p4c and mininet [here](https://github.com/jafingerhut/p4-guide/blob/master/bin/README-install-troubleshooting.md). You can download the same version as ours directely from [this link](https://drive.google.com/file/d/1_1CCNnJeQRpAfhTpw-m2LZ2T97QWgKp8/view?pli=1).
+
+To download and install bmv2, p4c and mininet you should run these commands:
+``` 
+git clone https://github.com/p4lang/behavioral-model
+
+sudo apt-get install -y automake cmake libgmp-dev \
+    libpcap-dev libboost-dev libboost-test-dev libboost-program-options-dev \
+    libboost-system-dev libboost-filesystem-dev libboost-thread-dev \
+    libevent-dev libtool flex bison pkg-config g++ libssl-dev
+
+cd behavioral-model
+```
+
+If you're on Ubuntu 22.04, run:
+```
+sudo ./install_deps_ubuntu_22.04.sh
+```
+
+If you're on Ubuntu 20.04, run:
+```
+sudo ./install_deps.sh
+```
+
+Now, you should install bmv2:
+```
+./autogen.sh
+./configure
+make
+sudo make install
+```
+
+Now, for p4c, you should run:
+```
+cd .. #if you're on bmv2 folder
+
+git clone --recursive https://github.com/p4lang/p4c.git
+
+sudo apt-get install cmake g++ git automake libtool libgc-dev bison flex \
+libfl-dev libboost-dev libboost-iostreams-dev \
+libboost-graph-dev llvm pkg-config python3 python3-pip \
+tcpdump
+
+mkdir build
+cd build
+cmake .. <optional arguments>
+make -j4
+make -j4 check
+sudo make install
+```
+
+Now with p4c you can compile your P4 programs.
+
+Now, you must download and install mininet following the steps on [this link](https://github.com/mininet/mininet).
+
+With bmv2, p4c and mininet in your machine you can proceed.
 
 ### Step 1
 First off all, you need to follow [these steps](https://github.com/nsg-ethz/p4-learning/tree/master/examples/multiqueueing). This will allow your bmv2 and the compiler to be able to support multiqueueing inside bmv2
