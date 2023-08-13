@@ -1,8 +1,8 @@
 # p4-multiqueue
-Virtual Machine with p4 and multiqueue (bmv2) using mininet
+Virtual Machine with p4 and multiqueue (bmv2) using mininet.
 
 In this github we teach you how to get your own mininet running p4 code with multiple queues inside bmv2.
-The easiest way is to download our Virtual Machine, avaiable in **Option 1**, but you can follow our step by step tutorial to have your own machine running mininet with multiqueue in **Option 2**
+The easiest way is to download our Virtual Machine, avaiable in **Option 1**, but you can follow our step by step tutorial to have your own machine running mininet with multiqueue in **Option 2**.
 
 ## Option 1
 You can download our Virtual Machine in [this link](https://drive.google.com/file/d/1Fwz2RwHIK5KdgVkLBmCA2ga2yJ5MXZOH/view?usp=sharing). The base VM used is from mininet releases in [this link](https://github.com/mininet/mininet/releases/).
