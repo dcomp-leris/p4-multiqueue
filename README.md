@@ -79,7 +79,7 @@ If you're on Ubuntu 20.04, run:
 sudo ./install_deps.sh
 ```
 
-Now, you should install bmv2:
+Now, you should install BMv2:
 ```
 ./autogen.sh
 ./configure
@@ -89,7 +89,7 @@ sudo make install
 
 Now, for p4c, you should run:
 ```
-cd .. #if you're on bmv2 folder
+cd .. #if you're on BMv2 folder
 
 git clone --recursive https://github.com/p4lang/p4c.git
 
