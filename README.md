@@ -43,7 +43,7 @@ On h1 terminal, run this:
 sudo ./send_h1.py 10.0.1.10
 ```
 
-Congratulations! Now you have your own mininet running p4 programs that support multiple queues on bmv2!
+Congratulations! Now you have your own mininet running p4 programs that support multiple queues on BMv2!
 Now you can use your own p4 files to use the priority-queues and change the qid.
 You can change the topology by changing the topo.txt file, adding more hosts, more switches and new connections.
 
