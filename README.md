@@ -113,7 +113,7 @@ Now, you must download and install mininet following the steps on [this link](ht
 With BMv2, p4c and mininet in your machine you can proceed.
 
 ### Step 1
-First off all, you need to follow [these steps](https://github.com/nsg-ethz/p4-learning/tree/master/examples/multiqueueing). This will allow your BMv2 and the compiler to be able to support multiqueueing inside BMv2.
+First of all, you need to follow [these steps](https://github.com/nsg-ethz/p4-learning/tree/master/examples/multiqueueing). This will allow your BMv2 and the compiler to be able to support multiqueueing inside BMv2.
 
 ### Step 2
 You should now go to PATH_TO_BMV2/mininet and edit p4_mininet.py file. 
