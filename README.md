@@ -50,14 +50,14 @@ You can change the topology by changing the topo.txt file, adding more hosts, mo
 HINT: If you're having problems with packet forwarding you can see both switches log. It can be found on /tmp/p4s.s1.log for switch 1 and tmp/p4s.s2.log for switch 2.
 
 ## Option 2
-By choosing this option you can follow this step by step to get your own machine to work with priority-queues inside bmv2.
+By choosing this option you can follow this step-by-step to get your own machine to work with priority-queues inside BMv2.
 
-Note: Your machine should have installed [bmv2](https://github.com/p4lang/behavioral-model), [mininet](https://github.com/mininet/mininet) and [p4c](https://github.com/p4lang/p4c).
+Note: Your machine should have installed [BMv2](https://github.com/p4lang/behavioral-model), [mininet](https://github.com/mininet/mininet) and [p4c](https://github.com/p4lang/p4c).
 
 
-We recommend you to download the same VM as we did. You can get this VM ready with bmv2, p4c and mininet [here](https://github.com/jafingerhut/p4-guide/blob/master/bin/README-install-troubleshooting.md). You can download the same version as ours directely from [this link](https://drive.google.com/file/d/1_1CCNnJeQRpAfhTpw-m2LZ2T97QWgKp8/view?pli=1). If you chose this VM, just proceed to Step 1 below.
+We recommend you to download the same VM as we did. You can get this VM ready with BMv2, p4c and mininet [here](https://github.com/jafingerhut/p4-guide/blob/master/bin/README-install-troubleshooting.md). You can download the same version as ours directly from [this link](https://drive.google.com/file/d/1_1CCNnJeQRpAfhTpw-m2LZ2T97QWgKp8/view?pli=1). If you chose this VM, just proceed to Step 1 below.
 
-To download and install bmv2, p4c and mininet inside your machine you should run these commands:
+To download and install BMv2, p4c and mininet inside your machine you should run these commands:
 ``` 
 git clone https://github.com/p4lang/behavioral-model
 
@@ -110,10 +110,10 @@ Now with p4c you can compile your P4 programs.
 
 Now, you must download and install mininet following the steps on [this link](https://github.com/mininet/mininet).
 
-With bmv2, p4c and mininet in your machine you can proceed.
+With BMv2, p4c and mininet in your machine you can proceed.
 
 ### Step 1
-First off all, you need to follow [these steps](https://github.com/nsg-ethz/p4-learning/tree/master/examples/multiqueueing). This will allow your bmv2 and the compiler to be able to support multiqueueing inside bmv2
+First off all, you need to follow [these steps](https://github.com/nsg-ethz/p4-learning/tree/master/examples/multiqueueing). This will allow your BMv2 and the compiler to be able to support multiqueueing inside BMv2.
 
 ### Step 2
 You should now go to PATH_TO_BMV2/mininet and edit p4_mininet.py file. 
@@ -176,4 +176,4 @@ def start(self, controllers):
         info(' '.join(args) + "\n")
 ```
 
-After following these steps your mininet is ready to allow your p4 codes with multiple queues in bmv2!
+After following these steps your mininet is ready to allow your p4 codes with multiple queues in BMv2!
