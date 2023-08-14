@@ -8,9 +8,11 @@ The easiest way is to download our Virtual Machine, available in **Option 1**, b
 You can download our Virtual Machine in [this link](https://drive.google.com/file/d/1Fwz2RwHIK5KdgVkLBmCA2ga2yJ5MXZOH/view?usp=sharing). The base VM used is from mininet releases in [this link](https://github.com/mininet/mininet/releases/).
 
 Login: p4
+
 password: p4
 
 Login: vagrant
+
 password: vagrant
 
 ### Topology
