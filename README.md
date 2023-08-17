@@ -32,7 +32,7 @@ sudo ./run_priority_queues.sh
 
 This will get mininet to raise the topology specified above, with 2 hosts and 2 switches and with a simple IPv4 forwarding, with the priority-queues enabled on BMv2.
 
-The p4 file for this lab consists on checking the IP destination on ```qid_table```. If the destination is host 2 (IP = 10.0.1.10), then the priority is set to 1. The sender ```send_h1.py``` is responsible for creating packets to send the destination and the switch appends the values of the qids for each node. You can change and test the qid value by changing ```command_s1.txt``` or ```command_s2.txt``` files.
+The p4 file for this lab consists on checking the IP destination on ```qid_table```. If the destination is host 2 (IP = 10.0.1.10), then the priority is set to 1 by it's action, changing the value of ```standard_metadata.priority```. The sender ```send_h1.py``` is responsible for creating packets to send to the destination and the switch appends the values of the qids for each node, couting each node value on ```nodeCount``` header and storing the switch ID and the values of priority and qid. You can change and test the qid value by changing it on ```command_s1.txt``` or ```command_s2.txt``` files.
 
 With the mininet working, you can start to send packets using the sender file on host 1 and to receive packets using the receiver file on host 2. That can be done like this:
 
