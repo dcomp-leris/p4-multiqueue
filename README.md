@@ -13,9 +13,11 @@ Vagrant User has BMv2, p4c and mininet files.
 
 
 Login: p4
+
 password: p4
 
 Login: vagrant
+
 password: vagrant
 
 ### Topology
