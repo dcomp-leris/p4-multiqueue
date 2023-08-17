@@ -5,7 +5,12 @@ In this github, we teach you how to get your own mininet running p4 code with mu
 The easiest way is to download our Virtual Machine, available in **Option 1**, but you can follow our step-by-step tutorial to have your own machine running mininet with multiqueues in **Option 2**.
 
 ## Option 1
-You can download our Virtual Machine in [this link](https://drive.google.com/file/d/1Fwz2RwHIK5KdgVkLBmCA2ga2yJ5MXZOH/view?usp=sharing). The base VM used is from mininet releases in [this link](https://github.com/mininet/mininet/releases/).
+You can download our Virtual Machine in [this link](https://drive.google.com/file/d/1RqsngJ0inKyo1SPyuON3GNXkSbJDyuJn/view?usp=sharing). The base VM used is from mininet releases in [this link](https://github.com/mininet/mininet/releases/).
+
+There are two users in this VM, you can choose to login on any.
+P4 User has the lab for the priority-queues, including the p4 files and the python scripts, including the topology.
+Vagrant User has BMv2, p4c and mininet files.
+
 
 Login: p4
 password: p4
@@ -22,12 +27,14 @@ password: vagrant
 cd /home/p4/labs/int/
 ```
 ```
-sudo ./run_int.sh
+sudo ./run_priority_queues.sh
 ```
 
-This will get mininet to raise the topology specified above, with 2 hosts and 2 switches and with a simple INT based on [this link](https://github.com/dcomp-leris/InbandNetworkTelemetry-P4). 
+This will get mininet to raise the topology specified above, with 2 hosts and 2 switches and with a simple IPv4 forwarding, with the priority-queues enabled on BMv2.
 
-With the mininet working, you can start to send packets using the send.py file on host 1 and to receive packets using the receive.py file on host 2. That can be done like this:
+The p4 file for this lab consists on checking the IP destination on ```qid_table```. If the destination is host 2 (IP = 10.0.1.10), then the priority is set to 1. The sender ```send_h1.py``` is responsible for creating packets to send the destination and the switch appends the values of the qids for each node. You can change and test the qid value by changing ```command_s1.txt``` or ```command_s2.txt``` files.
+
+With the mininet working, you can start to send packets using the sender file on host 1 and to receive packets using the receiver file on host 2. That can be done like this:
 
 
 ```
@@ -47,7 +54,7 @@ Congratulations! Now you have your own mininet running p4 programs that support 
 Now you can use your own p4 files to use the priority-queues and change the qid.
 You can change the topology by changing the topo.txt file, adding more hosts, more switches and new connections.
 
-HINT: If you're having problems with packet forwarding you can see both switches log. It can be found on /tmp/p4s.s1.log for switch 1 and tmp/p4s.s2.log for switch 2.
+HINT: If you're having problems with packet forwarding you can see both switches log. It can be found on ```/tmp/p4s.s1.log``` for switch 1 and ```tmp/p4s.s2.log``` for switch 2.
 
 ## Option 2
 By choosing this option you can follow this step-by-step to get your own machine to work with priority-queues inside BMv2.
