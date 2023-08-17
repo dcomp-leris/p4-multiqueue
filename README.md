@@ -5,7 +5,7 @@ In this github, we teach you how to get your own mininet running p4 code with mu
 The easiest way is to download our Virtual Machine, available in **Option 1**, but you can follow our step-by-step tutorial to have your own machine running mininet with multiqueues in **Option 2**.
 
 ## Option 1
-You can download our Virtual Machine in [this link](https://drive.google.com/file/d/1RqsngJ0inKyo1SPyuON3GNXkSbJDyuJn/view?usp=sharing). The base VM used is from mininet releases in [this link](https://github.com/mininet/mininet/releases/).
+You can download our Virtual Machine in [this link](https://drive.google.com/file/d/1tb9hyiilT05lqAkQXTvaHiJtn9SA2tRs/view?usp=sharing). The base VM used is from mininet releases in [this link](https://github.com/mininet/mininet/releases/).
 
 There are two users in this VM, you can choose to login on any.
 P4 User has the lab for the priority-queues, including the p4 files and the python scripts, including the topology.
@@ -34,7 +34,7 @@ sudo ./run_priority_queues.sh
 
 This will get mininet to raise the topology specified above, with 2 hosts and 2 switches and with a simple IPv4 forwarding, with the priority-queues enabled on BMv2.
 
-The p4 file for this lab consists on checking the IP destination on ```qid_table```. If the destination is host 2 (IP = 10.0.1.10), then the priority is set to 1 by the action ```qid_change()```, changing the value of ```standard_metadata.priority```. The sender ```send_h1.py``` is responsible for creating packets to send to the destination and the switch appends the values of the qids for each node, couting each node value on ```nodeCount``` header and storing the switch ID and the values of priority and qid. You can change and test the qid value by changing it on ```command_s1.txt``` or ```command_s2.txt``` files.
+The p4 file for this lab consists on checking the IP destination on ```qid_table``` in the control plane to define the qid. On this example, if the destination is host 2 (IP = 10.0.1.10), then the priority is set to 1 by the action ```qid_change()```, else, if the destination is host 1 (IP = 10.0.0.10), then the priority is set to 0, changing the value of ```standard_metadata.priority```. The sender ```send_h1.py``` is responsible for creating packets to send to the destination and the switch appends the values of the qids for each node, couting each node value on ```nodeCount``` header and storing the switch ID and the values of priority and qid in the packets. You can change and test the qid value by changing it on ```command_s1.txt``` or ```command_s2.txt``` files.
 
 With the mininet working, you can start to send packets using the sender file on host 1 and to receive packets using the receiver file on host 2. That can be done like this:
 
