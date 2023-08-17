@@ -26,7 +26,7 @@ password: vagrant
 ### How to run
 
 ```
-cd /home/p4/labs/int/
+cd /home/p4/labs/priority-queues/
 ```
 ```
 sudo ./run_priority_queues.sh
