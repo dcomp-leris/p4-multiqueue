@@ -1,5 +1,0 @@
-table_set_default swtrace add_swtrace 2
-table_add ipv4_lpm ipv4_forward 10.0.0.10/24 => 00:aa:bb:00:00:03 1
-table_add ipv4_lpm ipv4_forward 10.0.1.10/24 => 00:04:00:00:00:01 2
-table_add qid_table qid_change 10.0.0.10/24 => 0
-table_add qid_table qid_change 10.0.1.10/24 => 1
