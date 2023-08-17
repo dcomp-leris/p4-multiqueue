@@ -5,7 +5,7 @@ In this github, we teach you how to get your own mininet running p4 code with mu
 The easiest way is to download our Virtual Machine, available in **Option 1**, but you can follow our step-by-step tutorial to have your own machine running mininet with multiqueues in **Option 2**.
 
 ## Option 1
-You can download our Virtual Machine in [this link](https://drive.google.com/file/d/1tb9hyiilT05lqAkQXTvaHiJtn9SA2tRs/view?usp=sharing). The base VM used is from mininet releases in [this link](https://github.com/mininet/mininet/releases/).
+You can download our Virtual Machine in [this link](https://drive.google.com/file/d/13a50AjPgYaTHknkU71zguEEmLHHJq54i/view?usp=sharing). The base VM used is from mininet releases in [this link](https://github.com/mininet/mininet/releases/).
 
 There are two users in this VM, you can choose to login on any.
 P4 User has the lab for the priority-queues, including the p4 files and the python scripts, including the topology.
